@@ -1,6 +1,7 @@
 package models
 
 /*
+//book.go
 import "github.com/jinzhu/gorm"
 
 type Book struct {

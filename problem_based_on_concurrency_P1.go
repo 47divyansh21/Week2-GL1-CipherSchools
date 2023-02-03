@@ -3,6 +3,7 @@ package main
 //consume_restapi.go
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -28,7 +29,7 @@ func main2() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//fmt.Println(response.Body)
+	fmt.Println(response.Body)
 	data, err := ioutil.ReadAll(response.Body)
 	var responseObject Response
 	json.Unmarshal(data, &responseObject)
